@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="w-1/2 mx-auto text-center bg-sky-400 m-5">
+      <h1 class="text-3xl font-serif text-green-300">Total Balance</h1>
+      <p id="showBalance" class="text-2xl py-5">00$</p>
+    </div>
+
+    <div class="mt-11 md:flex md:w-11/12 md:justify-between md:mx-auto">
+      <div class="p-10 bg-sky-300 md:w-[45%]">
+        <div class="pb-5 w-[100%]">
+          <input
+            id="deposit"
+            class="border-4 border-dashed py-2 w-full px-3"
+            type="number"
+            min="0"
+            placeholder="Enter Your Amound"
+          />
+        </div>
+        <p class="text-xl">Check and confirm</p>
+        <button
+          id="confirmDeposit"
+          class="text-2xl bg-orange-300 px-6 py-2 rounded-md font-mono mt-2"
+        >
+          confirm
+        </button>
+      </div>
+
+      <!-- widrow -->
+      <div class="p-10 bg-sky-300 mt-5 md:w-[45%] md:mt-0">
+        <div class="pb-5 w-[100%]">
+          <input
+            id="withdraw"
+            class="border-4 border-dashed py-2 w-full px-3"
+            type="text"
+            placeholder="Enter Your Amound"
+          />
+        </div>
+        <p class="text-xl">Check and confirm</p>
+        <button
+          id="widrowbtn"
+          class="text-2xl bg-orange-300 px-6 py-2 rounded-md font-mono mt-2"
+        >
+          confirm
+        </button>
+      </div>
+    </div>
+
+    <!-- transection -->
+    <div class="bg-sky-300 mt-5 md:w-[85%] mx-auto text-center">
+      <button id="showTransection" class="text-2xl font-serif py-4 bg-green-400 px-5 rounded-md my-2">All Transection</button>
+
+      <div id="dataTables" class="hidden py-5">
+        <table id="dataTable" class="border-2 w-11/12 mx-auto">
+          <tr class="w-full ">
+            <th class="w-1/3 text-left">Time</th>
+            <th class="w-[10%] text-left">Type</th>
+            <th class="w-[10%] text-left">Amount</th>
+            <th class="w-[10%] text-left">Balance</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    
+    
+    <script src="js.js"></script>
+  </body>
+</html>
